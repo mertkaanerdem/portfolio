@@ -12,11 +12,20 @@
       integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
       crossorigin="anonymous"
     />
+    <!--Style area-->
+    <link rel="stylesheet" href="style.css" />
 
+    <!--Font area-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
     <title>Mertkaan Erdem's Portfolio</title>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light navigation-bg">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">Mertkaan Erdem</a>
         <button
@@ -30,21 +39,22 @@
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
+        <div
+          class="collapse navbar-collapse navigation-links justify-content-end"
+          id="navbarNav"
+        >
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#"
-                >Hakkımda</a
-              >
+              <a class="nav-link" aria-current="page" href="#about">Hakkımda</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Yaptığım İşler</a>
+              <a class="nav-link" href="#portfolio">Yaptığım İşler</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Yorumlar</a>
+              <a class="nav-link" href="#comments">Yorumlar</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link">İletişim</a>
+              <a class="nav-link" href="#contact">İletişim</a>
             </li>
           </ul>
         </div>
@@ -52,10 +62,10 @@
     </nav>
     <div class="container-fluid">
       <div class="row">
-        <div class="col-12">Hakkımda</div>
-        <div class="col-12">Yaptığım İşler</div>
-        <div class="col-12">Yorumlar</div>
-        <div class="col-12">İletişim</div>
+        <div class="col-12" id="about">Hakkımda</div>
+        <div class="col-12" id="portfolio">Yaptığım İşler</div>
+        <div class="col-12" id="comments">Yorumlar</div>
+        <div class="col-12" id="contact">İletişim</div>
       </div>
     </div>
 

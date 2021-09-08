@@ -1,0 +1,45 @@
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+nav {
+  position: sticky !important;
+  font-weight: bold;
+  top: 0;
+}
+.navigation-bg {
+  background-color: #f9dc5c;
+  color: #011936;
+}
+.navigation {
+  display: flex;
+  flex-direction: row;
+}
+.navigation-links ul li a {
+  color: #011936 !important;
+  font-weight: 400;
+}
+
+#about {
+  background-color: #011936;
+  color: #f9dc5c;
+  width: 100vw;
+  height: 100vh;
+}
+#portfolio {
+  background-color: #f9dc5c;
+  color: #011936;
+  width: 100%;
+}
+
+#comments {
+  background-color: #011936;
+  color: #f9dc5c;
+  width: 100%;
+}
+
+#contact {
+  background-color: #f9dc5c;
+  color: #011936;
+  width: 100%;
+}
