@@ -188,6 +188,7 @@ textarea:focus {
   padding: 10px;
   background-color: #c8c8c8;
   overflow-y: auto;
+  color: #011936;
 }
 
 .comments-box > .btn {
@@ -196,6 +197,7 @@ textarea:focus {
   right: 0;
   margin: 10px;
 }
+
 /* iletişim bölümü */
 #contact {
   /* background-color: #f9dc5c; */
