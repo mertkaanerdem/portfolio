@@ -1,5 +1,6 @@
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: "Epilogue", sans-serif;
+  box-sizing: border-box;
 }
 
 a {
@@ -11,8 +12,12 @@ a {
 header {
   position: sticky !important;
   z-index: 1;
-  font-weight: bold;
+  letter-spacing: 0.3em;
   top: 0;
+}
+
+.navbar-brand {
+  font-weight: 200;
 }
 .navigation-bg {
   background-color: #f9dc5c;
@@ -24,7 +29,15 @@ header {
 }
 .navigation-links ul li a {
   color: #011936 !important;
-  font-weight: 400;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  opacity: 0.5;
+}
+
+.navigation-links ul li a:hover {
+  transition: 0.5s;
+  opacity: 1;
+  border-bottom: 1px solid #011936;
 }
 
 /* hakkımda bölümü */
@@ -142,6 +155,7 @@ button:active {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  padding: 10px;
 }
 
 .making-comments-buttons {
@@ -175,11 +189,12 @@ textarea:focus {
 }
 .comments-box {
   height: 20vh;
-  background-color: #444;
+  background-color: #011936c5;
   box-shadow: 0 5px 15px #111;
   border-radius: 5px;
   padding: 10px;
   position: relative;
+  padding: 10px;
 }
 
 .comments-area {
@@ -187,7 +202,7 @@ textarea:focus {
   width: 100%;
   border-radius: 5px;
   padding: 10px;
-  background-color: #c8c8c8;
+  background-color: #eee;
   overflow-y: auto;
   color: #011936;
 }
@@ -252,10 +267,9 @@ textarea:focus {
 }
 
 h5 {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: bold;
+  /* font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; */
+  font-weight: 200;
   color: white;
-
   opacity: 0;
   transition: opacity 1s;
 }
