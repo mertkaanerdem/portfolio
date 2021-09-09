@@ -250,7 +250,7 @@ textarea:focus {
   background-size: 600px;
 }
 
-h4 {
+h5 {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: bold;
   color: white;
@@ -259,7 +259,7 @@ h4 {
   transition: opacity 1s;
 }
 
-.card0:hover h4 {
+.card0:hover h5 {
   opacity: 1;
 }
 .fa {
