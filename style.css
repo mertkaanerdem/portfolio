@@ -86,7 +86,7 @@ nav {
   background-color: aliceblue;
   color: #011936;
   width: 100%;
-  height: 100vh;
+  /* height: 100vh; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -125,14 +125,80 @@ button:active {
 
 /* yorumlar bölümü */
 #comments {
-  background-color: #011936;
+  background-color: #011936c5;
   color: #f9dc5c;
   width: 100%;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.making-comments {
+  width: 30vw;
+  height: 20vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
+.making-comments-buttons {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+#input {
+  width: 30vw;
+  height: 15vh;
+  padding-top: 10px;
+  background: none;
+  font-size: 20px;
+  border: none;
+  border-top: 1px solid #011936;
+  border-radius: 5px;
+  color: #c8c8c8;
+}
+
+#input::placeholder {
+  color: #c8c8c8;
+}
+
+#input:focus {
+  border-top: 3px solid #011936;
+}
+textarea:active,
+textarea:focus {
+  outline: none !important;
+}
+.comments-box {
+  width: 30vw;
+  height: 20vh;
+  background-color: #444;
+  box-shadow: 0 5px 15px #111;
+  border-radius: 5px;
+  padding: 10px;
+  position: relative;
+}
+
+.comments-area {
+  height: 70%;
+  width: 100%;
+  border-radius: 5px;
+  padding: 10px;
+  background-color: #c8c8c8;
+  overflow-y: auto;
+}
+
+.comments-box > .btn {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin: 10px;
+}
 /* iletişim bölümü */
 #contact {
-  background-color: #f9dc5c;
+  /* background-color: #f9dc5c; */
   color: #011936;
   width: 100vw;
   height: 50vh;
