@@ -75,8 +75,9 @@ header {
   line-height: 1.3em;
   padding: 20px;
   color: #011936;
-  overflow-y: scroll;
-
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  overflow: auto;
   backdrop-filter: blur(25px) saturate(148%);
   background-color: rgba(255, 255, 255, 0.63);
   border-radius: 10px;
@@ -288,4 +289,29 @@ h5 {
   font-weight: bold;
   font-size: 14px;
   color: #011936;
+}
+
+/* scroll bar styling */
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    0deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(249, 220, 92, 1) 100%
+  );
+}
+
+::-webkit-scrollbar-thumb {
+  background: #104585;
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #011936;
+  transition: 0.5s;
 }
