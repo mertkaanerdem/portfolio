@@ -8,7 +8,7 @@ a {
 }
 
 /* navigasyon bölümü */
-nav {
+header {
   position: sticky !important;
   z-index: 1;
   font-weight: bold;
@@ -53,6 +53,7 @@ nav {
   border-right: 3px solid;
   font-family: monospace;
   font-size: 2em;
+  color: #f9dc5c;
 }
 
 @keyframes typing {
@@ -69,11 +70,12 @@ nav {
 
 .about-me {
   width: 50vw;
+  max-height: 30vh;
   text-align: justify;
-  font-size: 1.3em;
   line-height: 1.3em;
   padding: 20px;
   color: #011936;
+  overflow-y: scroll;
 
   backdrop-filter: blur(25px) saturate(148%);
   background-color: rgba(255, 255, 255, 0.63);
@@ -135,7 +137,6 @@ button:active {
   gap: 20px;
 }
 .making-comments {
-  width: 30vw;
   height: 20vh;
   display: flex;
   flex-direction: column;
@@ -149,7 +150,7 @@ button:active {
 }
 
 #input {
-  width: 30vw;
+  width: auto;
   height: 15vh;
   padding-top: 10px;
   background: none;
@@ -172,7 +173,6 @@ textarea:focus {
   outline: none !important;
 }
 .comments-box {
-  width: 30vw;
   height: 20vh;
   background-color: #444;
   box-shadow: 0 5px 15px #111;
@@ -281,4 +281,11 @@ h4 {
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
+}
+
+.copyright {
+  margin-top: 20px;
+  font-weight: bold;
+  font-size: 14px;
+  color: #011936;
 }

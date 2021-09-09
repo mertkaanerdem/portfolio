@@ -39,7 +39,7 @@
     <title>Mertkaan Erdem's Portfolio</title>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light navigation-bg">
+    <header class="navbar navbar-expand-lg navbar-light navigation-bg">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">Mertkaan Erdem</a>
         <button
@@ -53,7 +53,7 @@
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div
+        <nav
           class="collapse navbar-collapse navigation-links justify-content-end"
           id="navbarNav"
         >
@@ -71,11 +71,11 @@
               <a class="nav-link" href="#contact">İletişim</a>
             </li>
           </ul>
-        </div>
+        </nav>
       </div>
-    </nav>
-    <main class="container-fluid">
-      <div class="row">
+    </header>
+    <div class="container-fluid">
+      <main class="row">
         <div class="col-12" id="about">
           <div class="heading-wrapper">
             <h1 class="header">Mertkaan Erdem</h1>
@@ -284,44 +284,49 @@
           </div>
         </div>
         <div class="col-12" id="comments">
-          <div class="making-comments">
-            <textarea
-              type="text"
-              id="input"
-              placeholder="Yorumunuzu buraya girebilirsiniz"
-            ></textarea>
-            <div class="making-comments-buttons">
-              <button
-                class="btn btn-outline-danger"
-                type="button"
-                name="button"
-                id="cancel"
-              >
-                İptal Et
-              </button>
-              <button
-                class="btn btn-outline-info"
-                type="button"
-                name="button"
-                id="comment"
-              >
-                Yorum Gönder
-              </button>
+          <div class="container">
+            <div class="row">
+              <div class="making-comments col-md-12 col-lg-6">
+                <textarea
+                  type="text"
+                  id="input"
+                  placeholder="Yorumunuzu buraya girebilirsiniz"
+                ></textarea>
+                <div class="making-comments-buttons">
+                  <button
+                    class="btn btn-outline-danger"
+                    type="button"
+                    name="button"
+                    id="cancel"
+                  >
+                    İptal Et
+                  </button>
+                  <button
+                    class="btn btn-outline-info"
+                    type="button"
+                    name="button"
+                    id="comment"
+                  >
+                    Yorum Gönder
+                  </button>
+                </div>
+              </div>
+
+              <div class="comments-box col-md-12 col-lg-6">
+                <div class="comments-area"></div>
+                <button
+                  class="btn btn-outline-warning"
+                  type="button"
+                  name="button"
+                  id="delete"
+                >
+                  Sil
+                </button>
+              </div>
             </div>
           </div>
-          <div class="comments-box">
-            <div class="comments-area"></div>
-            <button
-              class="btn btn-outline-warning"
-              type="button"
-              name="button"
-              id="delete"
-            >
-              Sil
-            </button>
-          </div>
         </div>
-        <div class="col-12" id="contact">
+        <footer class="col-12" id="contact">
           <div class="profile-container">
             <div class="card card0">
               <div class="border">
@@ -353,9 +358,10 @@
               </div>
             </div>
           </div>
-        </div>
-      </div>
-    </main>
+          <p class="copyright">Copyright &copy; 2021 - M. Mertkaan Erdem</p>
+        </footer>
+      </main>
+    </div>
 
     <!-- Optional JavaScript; choose one of the two! -->
 
